@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BAB VII - CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 7.1 Kompetensi Dasar -->
+    <h2>7.1 Kompetensi Dasar</h2>
+    <p>
+        Mahasiswa dapat mengenal tag dan fungsi CSS dalam membangun
+        rancang awal sistem berbasis web sehingga dapat membuatnya
+        lebih dinamis dari segi desain.
+    </p>
+
+    <!-- 7.2 Indikator -->
+    <h2>7.2 Indikator</h2>
+    <p>
+        Mahasiswa mampu mendesain web lebih baik dan lebih dinamis.
+    </p>
+
+    <!-- 7.3 Uraian Materi -->
+    <h2>7.3 Uraian Materi</h2>
+
+    <p>
+        Style Sheets merupakan feature yang sangat penting dalam
+        membuat Dynamic HTML. Meskipun bukan merupakan suatu
+        keharusan dalam membuat web, akan tetapi penggunaan style
+        sheets merupakan kelebihan tersendiri.
+    </p>
+
+    <p>
+        Suatu style sheet merupakan tempat dimana anda mengontrol
+        dan memanage style-style yang ada. Style sheet
+        mendeskripsikan bagaimana tampilan document HTML di layar.
+        Anda juga biasa menyebutnya sebagai template dari documents
+        HTML yang menggunakannya. Anda juga bisa membuat efek-efek
+        spesial di web anda dengan menggunakan style sheet.
+        Sebagai contoh anda bisa membuat style sheet yang
+        mendefinisikan style untuk <h1> dengan style bold dan italic
+        dan berwarna biru. Atau pada tag <p> yang akan ditampilkan
+        dengan warna kuning dan menggunakan font verdana dan masih
+        banyak lagi yang bisa anda lakukan dengan style sheet.
+    </p>
+
+    <p>
+        Secara teoritis anda bisa menggunakan style sheet technology
+        dengan HTML. Akan tetapi pada prakteknya hanya Cascading
+        Style Sheet (CSS) technology yang support pada hampir semua
+        web Browser. Karena CSS telah disestandartkan oleh World
+        Wide Web Consortium (W3C) untuk digunakan di web browser.
+    </p>
+
+    <!-- 7.3.1 Inline Styles -->
+    <h2>7.3.1 Inline Styles</h2>
+
+    <p>
+        Ada dua cara untuk merubah style dari web page anda yaitu
+        dengan:
+    </p>
+
+    <ul>
+        <li>Merubah inline style</li>
+        <li>Menulis script untuk merubah style anda.</li>
+    </ul>
+
+    <p>
+        Dengan menggunakan inline style anda dapat membuat dynamic
+        style tanpa harus menambahkan script ke web anda. Inline
+        styles merupakan style yang bisa kita pasang pada element
+        web tertentu saja.
+    </p>
+
+    <p>Contoh:</p>
+
+    <h1 style="color:red">
+        Jika anda ingin menambahkan style pada H1 dengan warna merah
+    </h1>
+
+    <p>
+        Jika anda ingin menggunakan script untuk memodifikasi inline
+        style, anda dapat menggunakan Style Object. Style Object
+        mensupport semua property yang di-support CSS untuk style.
+        Untuk menggunakan property pada script:
+    </p>
+
+    <ol>
+        <li>Hilangkan tanda hubung "-" dari property CSS Style.</li>
+        <li>Ganti huruf setelah tanda hubung menjadi Capital.</li>
+    </ol>
+
+    <p>Contoh:</p>
+
+    <ul>
+        <li><b>font-weight</b> menjadi <b>fontWeight</b></li>
+        <li><b>text-align</b> menjadi <b>textAlign</b></li>
+    </ul>
+
+    <!-- 7.3.2 Istilah-istilah dalam Style Sheet -->
+    <h2>7.3.2 Istilah-istilah dalam Style Sheet</h2>
+
+    <!-- 7.3.2.1 Style rule -->
+    <h3>7.3.2.1 Style rule</h3>
+
+    <p>
+        Cascading style sheet merupakan kumpulan aturan yang
+        mendefinisikan style dari document. Sebagai contoh kita bisa
+        membuat aturan style yang menentukan bahwa semua H2
+        ditampilkan dengan warna orange.
+    </p>
+
+    <!-- 7.3.2.2 Style sheet -->
+    <h3>7.3.2.2 Style sheet</h3>
+
+    <p>
+        Style sheet dapat di-embedded ke HTML document. Atau disebut
+        embedded style sheet. Style sheet juga bisa dibuat sebagai
+        external file dan di-link ke document HTML. Style rule bisa
+        ditekankan pada bagian tertentu dari web page. Sebagai contoh
+        anda bisa menentukan paragraph tertentu ditampilkan dengan
+        style bold dan italic sementara yang lain tetap seperti biasa.
+    </p>
+
+    <!-- 7.3.2.3 Selector -->
+    <h3>7.3.2.3 Selector</h3>
+
+    <p>
+        Bentuk penulisan selector dan declaration:
+    </p>
+
+    <pre>selector { property1: value; property2: value; ... }
+H1 { color: green; background-color: orange; }</pre>
+
+    <p>Style sheets terdiri dari dua bagian:</p>
+
+    <ol>
+        <li>Selector</li>
+        <li>Declaration, terdiri dari property dan nilainya.</li>
+    </ol>
+
+    <!-- 7.3.3 Komentar dalam Style Sheets -->
+    <h2>7.3.3 Komentar dalam Style Sheets</h2>
+
+    <p>
+        Comments atau komentar biasanya digunakan oleh programmer
+        untuk memudahkan mengingat kembali script yang sudah
+        ditulisnya. Comments di CSS hampir sama dengan comments
+        di C atau C++ yaitu dengan menggunakan:
+    </p>
+
+    <pre>/* isi Comments */</pre>
+
+    <p>Contoh:</p>
+
+    <pre>H1 { color:blue; } /* H1 elements akan menjadi biru */</pre>
+
+    <!-- 7.3.4 Pemakaian elemen style -->
+    <h2>7.3.4 Pemakaian elemen style</h2>
+
+    <p>
+        Mari kita mulai dengan mengatur warna huruf dan latar
+        belakang. Anda dapat mengerjakan ini dengan menggunakan
+        elemen style untuk mengatur karakter kode tag dokumen anda.
+    </p>
+
+    <pre>&lt;style type="text/css"&gt;
+body { color: black; background: white; }
+&lt;/style&gt;</pre>
+
+    <p>
+        Pernyataan yang ditulis antara kode tag style dan /style
+        menunjukkan perintah pengaturan style.
+    </p>
+
+    <!-- 7.3.5 Link ke sheet lainnya -->
+    <h2>7.3.5 Link ke sheet lainnya</h2>
+
+    <p>
+        Apabila anda menginginkan style yang sama untuk halaman HTML
+        anda yang lain, disarankan mempergunakan sheet-sheet
+        terpisah namun satu dan lainnya terhubung dengan cara link.
+        Anda dapat mengikuti cara berikut ini:
+    </p>
+
+    <pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+
+    <p>
+        Kode tag untuk link ini ditempatkan di bagian head dokumen
+        anda. Perintah rel perlu diatur dengan pernyataan stylesheet
+        agar supaya browser dapat menemukan perintah href sebagai
+        penunjuk ke alamat Web (URL) sheet anda.
+    </p>
+
+    <!-- 7.4 Latihan -->
+    <h2>7.4 Latihan</h2>
+
+    <!-- 7.4.1 Mengatur tepi halaman -->
+    <h3>7.4.1 Mengatur tepi halaman (page margin)</h3>
+
+    <p>
+        Halaman Web akan tampil cantik bila dituliskan dalam margin
+        yang lebih lebar. Anda dapat mengatur sisi kiri dan kanan
+        memakai karakter "margin-left" dan "margin-right".
+        Contoh:
+    </p>
+
+    <pre>&lt;style type="text/css"&gt;
+body { margin-left: 10%; margin-right: 10%; }
+&lt;/style&gt;</pre>
+
+    <!-- 7.4.2 Mengatur inden kiri dan kanan -->
+    <h3>7.4.2 Mengatur inden kiri dan kanan</h3>
+
+    <p>
+        Agar halaman Web anda tampil lebih cantik bisa juga
+        diberikan inden (spasi) dari margin kiri beberapa huruf
+        sebelum menuliskan awal kalimat.
+    </p>
+
+    <pre>&lt;style type="text/css"&gt;
+body { margin-left: 10%; margin-right: 10%; }
+h1 { margin-left: -8%; }
+h2,h3,h4,h5,h6 { margin-left: -4%; }
+&lt;/style&gt;</pre>
+
+    <!-- 7.4.3 Mengatur jarak atas dan bawah -->
+    <h3>7.4.3 Mengatur jarak penulisan dari tepi atas dan bawah halaman</h3>
+
+    <p>
+        Program Browser biasanya mengerjakan batas atas dan bawah,
+        paragraf dan lain-lain dengan baik. Namun ketika anda ingin
+        membuat ruang di sebelah atas atau bawah halaman web anda,
+        anda perlu mengaturnya. Property margin-top menentukan ruang
+        sebelah atas dan property margin-bottom menentukan ruang
+        sebelah bawah halaman web anda.
+    </p>
+
+    <pre>h2 { margin-top: 8em; margin-bottom: 3em; }</pre>
+
+    <p>Contoh penggunaan class:</p>
+
+    <pre>&lt;h2 class="subsection"&gt;Getting started&lt;/h2&gt;</pre>
+
+    <pre>h2.subsection { margin-top: 8em; margin-bottom: 3em; }</pre>
+
+    <!-- 7.4.4 Inden pada baris pertama -->
+    <h3>7.4.4 Inden pada baris pertama</h3>
+
+    <p>
+        Kadang-kadang anda ingin membuat inden pada baris pertama
+        tiap paragraf. Cara berikut dapat anda lakukan.
+    </p>
+
+    <pre>p { text-indent: 2em; margin-top: 0; margin-bottom: 0; }</pre>
+
+    <!-- 7.5 Tugas -->
+    <h2>7.5 Tugas</h2>
+
+    <h3>Uraian Materi</h3>
+
+    <p>
+        Style Sheets merupakan feature yang sangat penting dalam
+        membuat Dynamic HTML. Meskipun bukan merupakan suatu
+        keharusan dalam membuat web, akan tetapi penggunaan style
+        sheets merupakan kelebihan tersendiri.
+    </p>
+
+    <p>
+        Suatu style sheet merupakan tempat dimana anda mengontrol
+        dan memanage style-style yang ada.
+    </p>
+
+    <p>
+        Style sheet mendeskripsikan bagaimana tampilan document HTML
+        di layar. Anda juga bisa membuat efek-efek spesial di web
+        anda dengan menggunakan style sheet.
+    </p>
+
+</body>
+</html>

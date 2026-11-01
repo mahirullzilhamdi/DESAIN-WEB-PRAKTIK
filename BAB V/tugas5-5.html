@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas 5.5 - Logo UTY</title>
+</head>
+<body>
+
+    <h2>Logo UTY Menggunakan SVG</h2>
+
+    <svg width="500" height="400" viewBox="0 0 500 400">
+
+        <!-- Latar belakang -->
+        <defs>
+            <linearGradient id="latar" x1="0%" y1="0%"
+                x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#eeeeee"/>
+                <stop offset="100%" stop-color="#aaaaaa"/>
+            </linearGradient>
+
+            <radialGradient id="oval" cx="50%" cy="40%" r="70%">
+                <stop offset="0%" stop-color="#555555"/>
+                <stop offset="100%" stop-color="#111111"/>
+            </radialGradient>
+        </defs>
+
+        <rect x="5" y="5" width="490" height="390"
+            rx="55" fill="url(#latar)"/>
+
+        <!-- Lima bintang -->
+        <g fill="white">
+            <polygon points="85,65 91,81 108,81 94,91 99,108 85,98 71,108 76,91 62,81 79,81"/>
+            <polygon points="167,42 173,58 190,58 176,68 181,85 167,75 153,85 158,68 144,58 161,58"/>
+            <polygon points="250,32 256,48 273,48 259,58 264,75 250,65 236,75 241,58 227,48 244,48"/>
+            <polygon points="333,42 339,58 356,58 342,68 347,85 333,75 319,85 324,68 310,58 327,58"/>
+            <polygon points="415,65 421,81 438,81 424,91 429,108 415,98 401,108 406,91 392,81 409,81"/>
+        </g>
+
+        <!-- Oval tengah -->
+        <ellipse cx="250" cy="220" rx="215" ry="105"
+            fill="url(#oval)" stroke="#777777" stroke-width="3"/>
+
+        <!-- Tulisan UTY -->
+        <text x="250" y="250"
+            font-family="Arial"
+            font-size="94"
+            fill="white"
+            text-anchor="middle">UTY</text>
+
+    </svg>
+
+</body>
+</html>

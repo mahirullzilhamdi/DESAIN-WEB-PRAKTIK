@@ -1,0 +1,104 @@
+/* ==================================================
+   BAB VII - CSS
+   7.3.2.3 Selector
+   ================================================== */
+
+h1 {
+    color: green;
+    background-color: orange;
+}
+
+/* ==================================================
+   7.3.3 Komentar dalam Style Sheets
+   ================================================== */
+
+/* H1 elements akan menjadi biru */
+/*
+h1 {
+    color: blue;
+}
+*/
+
+/* ==================================================
+   7.3.4 Pemakaian elemen style
+   ================================================== */
+
+body {
+    color: black;
+    background: white;
+}
+
+/* ==================================================
+   7.4.1 Mengatur tepi halaman (page margin)
+   ================================================== */
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* ==================================================
+   7.4.2 Mengatur inden kiri dan kanan
+   ================================================== */
+
+h1 {
+    margin-left: -8%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-left: -4%;
+}
+
+/* ==================================================
+   7.4.3 Mengatur jarak penulisan dari tepi atas
+   dan bawah halaman
+   ================================================== */
+
+h2 {
+    margin-top: 8em;
+    margin-bottom: 3em;
+}
+
+/* Contoh class subsection sesuai modul */
+h2.subsection {
+    margin-top: 8em;
+    margin-bottom: 3em;
+}
+
+/* ==================================================
+   7.4.4 Inden pada baris pertama
+   ================================================== */
+
+p {
+    text-indent: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ==================================================
+   Penyesuaian tampilan tugas 7.5
+   ================================================== */
+
+.tugas-uraian {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tugas-uraian h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.tugas-uraian p {
+    text-align: justify;
+    text-indent: 2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
